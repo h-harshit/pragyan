@@ -1,0 +1,56 @@
+# Python-related
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+.env
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# FastAPI specific
+*.migrations/
+.alembic/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker related
+Dockerfile
+docker-compose.yml
+*.dockerfile
+
+# Python egg and dist packages
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+# Uncomment this line if you bundle your app with PyInstaller
+# dist/
+# build/
+
+# practice
+practice
+
+# extract
+extract

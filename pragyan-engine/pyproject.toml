@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "pragyan-engine"
+version = "0.1.0"
+description = "calculation engine"
+authors = ["Harshit <harshit.ju26@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.115.7"}
+duckdb = "^1.2.0"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.40"}
+sqlparse = "^0.5.3"
+asyncpg = "^0.30.0"
+psycopg2-binary = "^2.9.10"
+pandas = "^2.2.3"
+cryptography = "^44.0.2"
+psycopg = "^3.2.6"
+redis = "^5.2.1"
+python-dotenv = "^1.1.0"
+python-jose = {extras = ["cryptography"], version = "^3.4.0"}
+passlib = "^1.7.4"
+bcrypt = "^4.3.0"
+alembic = "^1.15.2"
+polars = "^1.28.1"
+pyarrow = "^20.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
