@@ -1,0 +1,1 @@
+export type SourceData = Record<string, Record<string, any>[]>

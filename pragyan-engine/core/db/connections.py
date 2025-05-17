@@ -328,24 +328,3 @@ class ConnectionManager:
             )
             await cls._test_conn(client_conn_engine)
             return client_conn_engine
-
-    # @classmethod
-    # async def query_client_conn(
-    #     cls, engine_id: str, query_str: str, user: str, app_db_session
-    # ):
-    #     try:
-    #         QueryUtils.check_query_sanity(query_str)
-    #     except AssertionError as err:
-    #         LOGGER.error(err)
-    #         raise err
-
-    #     client_conn_engine = await cls._get_client_conn_engine(
-    #         engine_id, user, app_db_session
-    #     )
-
-    #     formatted_query = QueryUtils.format_query(query_str)
-
-    #     async with client_conn_engine.connect() as conn:
-    #         result = await conn.execute(text(formatted_query))
-
-    #     return result.mappings().all()
